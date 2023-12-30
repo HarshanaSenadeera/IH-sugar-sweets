@@ -64,11 +64,11 @@ export class ModifyCart extends Component<ModifyCartsProps, ModifyCartState>{
         }
 
         return (
-            <div className={"w-full mt-4 p-[3px] bg-green-400 text-[15px] text-center"}>
+            <div className={"mt-2 bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded"}>
 
-                <button className={"float-left text-[15px] bg-yellow-300 rounded-lg h-6 w-7"} onClick={onDecreaseItemCount}>-</button>
+                <button className={"float-left text-[15px]  rounded-lg h-6 w-7 space-x-0.5 mr-2"} onClick={onDecreaseItemCount}>-</button>
                 <small className={"text-[15px] hover:text-white"}>{itemCount}</small>
-                <button className={"float-right text-[15px] bg-yellow-300 rounded-lg h-6 w-7"} onClick={onIncreaseItemCount}>+</button>
+                <button className={"float-right text-[15px] rounded-lg h-6 w-7 space-x-10 ml-2"} onClick={onIncreaseItemCount}>+</button>
 
             </div>
         );

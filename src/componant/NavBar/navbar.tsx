@@ -2,16 +2,18 @@ import {Component} from "react";
 import logo from "../../../public/remove_bg.png"
 import {Link} from "react-router-dom";
 
+
+
 export class Navbar extends Component{
 
     render() {
         return (
-            <div className="p-1 bg-amber-600 flex flex-col md:flex-row items-center justify-between ">
+            <div className="p-1 bg-purple-500 flex flex-col md:flex-row items-center justify-between ">
                 {/* Logo */}
                 <Link to="/"><img className="h-20 w-20 mb-4 md:mb-0 hover:cursor-pointer transform transition-transform hover:scale-110" src={logo} alt="Logo " /></Link>
 
                 {/* Navigation Links */}
-                <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 text-2xl w-full md:w-auto text-white font-sans font-thin">
+                <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 text-2xl w-full md:w-auto text-white font-sans font-bold">
                     <li className="md:ml-auto transform transition-transform hover:scale-110 hover:cursor-pointer">
                         <Link to="/">Home</Link>
                     </li>

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {ModifyCart} from "../ModifyCart/ModifyCart";
 
 interface ProductsProps {
     data: any;
@@ -57,14 +58,23 @@ export class Product extends Component<ProductsProps, ProductState> {
                 <p className="text-gray-700 mb-2">{data.description}</p>
                 <p className="text-purple-500 font-bold">Price: {data.price + data.currency}</p>
 
-                <div>
-                    <button
+
+                   {/* <button
                         className="mt-2 bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded"
                         onClick={this.addToCartOnClick}
                     >
                         Add to Cart
-                    </button>
+                    </button>*/}
+
+                <div className={"flex justify-center"}>{
+                    this.state.isActive ? <ModifyCart data={{product: data, isAdded: this.state.isActive}}/>:
+                        <button className={"mt-2 bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded"}
+                                onClick={this.addToCartOnClick}>Add to Cart
+                        </button>
+                }
+
                 </div>
+
             </div>
         );
     }
