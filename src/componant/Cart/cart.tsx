@@ -1,6 +1,10 @@
 import {Component} from "react";
+import {CartItems} from "../../module/CartItem";
 
-export class Cart extends Component<any, any>{
+interface CartProps {
+    itemList:CartItems[];
+}
+export class Cart extends Component<CartProps>{
 
     render() {
         return (
