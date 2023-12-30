@@ -1,9 +1,11 @@
 import {Component} from "react";
 import {Route, Routes} from "react-router-dom";
-import {Home} from "../../pages/Home/home";
 import {About} from "../../pages/About/about";
 import {Cart} from "../../pages/Cart/cart";
 import {Contact} from "../../pages/Contact/contact";
+import {Home} from "../../pages/Home/home";
+
+
 
 export class Content extends Component<any, any>{
 

@@ -28,12 +28,18 @@ export class Navbar extends Component{
 
                 {/* Sign-in and Login Buttons */}
                 <div className="flex flex-col md:flex-row space-y-2.5 md:space-y-0 md:space-x-2.5">
-                    <button className="bg-white hover:bg-blue-700 text-gray-400  font-bold py-2 px-4 rounded hover:text-white hover:cursor-pointer">
-                       <Link to="/singin">Sign In</Link>
-                    </button>
+                    <Link to="/singin">
+                        <button className="bg-white hover:bg-blue-700 text-gray-400  font-bold py-2 px-4 rounded hover:text-white hover:cursor-pointer">
+                        Sign In
+                        </button>
+                    </Link>
+
+                    <Link to="/login">
                     <button className="bg-white hover:bg-blue-700 text-gray-400 font-bold py-2 px-4 rounded hover:text-white">
-                        <Link to="/login">Login</Link>
+                       Login
                     </button>
+                    </Link>
+
                 </div>
             </div>
         );
