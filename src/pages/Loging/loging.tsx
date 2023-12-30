@@ -1,11 +1,11 @@
 import {Component} from "react";
 
-export class Home extends Component<any, any>{
+export class Login extends Component<any, any>{
 
     render() {
         return (
             <>
-                <h1>This is home</h1>
+                <h1>This is Login</h1>
             </>
         );
     }
