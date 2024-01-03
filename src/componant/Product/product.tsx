@@ -48,7 +48,7 @@ export class Product extends Component<ProductsProps, ProductState> {
         }
 
         return (
-            <div className="bg-white p-4 rounded-lg shadow-md mx-4 mb-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+            <div className="bg-white p-4 rounded-lg shadow-md mx-4 mb-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 bg-opacity-60">
                 <img
                     className="w-full h-32 object-cover mb-4 rounded-md"
                     src={imageSrc}
@@ -76,6 +76,7 @@ export class Product extends Component<ProductsProps, ProductState> {
                 </div>
 
             </div>
+
         );
     }
 

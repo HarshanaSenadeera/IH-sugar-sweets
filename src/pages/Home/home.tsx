@@ -29,7 +29,7 @@ export class Home extends Component{
         // @ts-ignore
         const {data} = this.state;
         return (
-            <div className="container mx-auto p-8">
+            <div className="container mx-auto p-8 bg-gradient-to-br from-pink-100 to-purple-500">
                 <header className="text-center mb-8">
                     <h1 className="text-4xl font-bold">Welcome to I & H Sugar Sweets</h1>
                     <p className="text-lg text-gray-600">
@@ -37,7 +37,7 @@ export class Home extends Component{
                     </p>
                 </header>
 
-                <div className="flex flex-wrap -mx-4 justify-center">
+                <div className="flex flex-wrap -mx-4 justify-center ">
 
                     {
                         data.map((product: any) =>(
