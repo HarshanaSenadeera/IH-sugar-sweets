@@ -14,7 +14,7 @@ function App() {
     <Routes>
         <Route path="/*" Component={Default}></Route>
         <Route path="/login" Component={Login}></Route>
-        <Route path="/singin" Component={Singin}></Route>
+        <Route path="/signin" Component={Singin}></Route>
     </Routes>
  </BrowserRouter>
   )
