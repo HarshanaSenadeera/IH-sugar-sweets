@@ -1,4 +1,5 @@
 import {Component} from "react";
+import call from "../../assets/home/phone-call (1).png";
 
 export class Contact extends Component<any, any>{
 
@@ -48,6 +49,18 @@ export class Contact extends Component<any, any>{
                         </button>
                     </form>
                 </div>
+
+                <a
+                    href="tel:+777454885"
+                    className="bg-green-500 text-white p-3 rounded-full fixed bottom-4 right-4 shadow-md hover:bg-green-700 transition duration-300 ease-in-out"
+                >
+                    <img
+                        src={call}
+                        alt="call"
+                        className="w-6 h-6 "
+                    />
+
+                </a>
             </div>
         );
     }

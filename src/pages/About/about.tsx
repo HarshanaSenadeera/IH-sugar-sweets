@@ -1,10 +1,11 @@
 import {Component} from "react";
+import call from "../../assets/home/phone-call (1).png";
 
 export class About extends Component<any, any>{
 
     render() {
         return (
-            <div className="container mx-auto p-8 bg-gradient-to-br from-pink-100 to-purple-500 text-white font-bold">
+            <div className="container mx-auto p-8 bg-gradient-to-br from-purple-200 to-purple-500 text-white font-bold">
                 <h1 className="text-4xl font-bold mb-4">About Our Cake Shop</h1>
 
                 <p className="mb-6">
@@ -41,6 +42,18 @@ export class About extends Component<any, any>{
                 <p className="mb-6">
                     Thank you for choosing <span className="text-pink-500">I & H Sugar Sweets</span> for your sweet celebrations. We look forward to being a part of your joyous moments!
                 </p>
+
+                <a
+                    href="tel:+777454885"
+                    className="bg-green-500 text-white p-3 rounded-full fixed bottom-4 right-4 shadow-md hover:bg-green-700 transition duration-300 ease-in-out"
+                >
+                    <img
+                        src={call}
+                        alt="call"
+                        className="w-6 h-6 "
+                    />
+
+                </a>
             </div>
         );
     }
