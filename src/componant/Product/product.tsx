@@ -59,7 +59,7 @@ export class Product extends Component<ProductsProps, ProductState> {
                 <p className="text-purple-500 font-bold">Price: {data.price + data.currency}</p>
 
 
-                   {/* <button
+                {/* <button
                         className="mt-2 bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded"
                         onClick={this.addToCartOnClick}
                     >

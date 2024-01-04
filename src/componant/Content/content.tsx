@@ -8,6 +8,8 @@ import {ModifyCart} from "../ModifyCart/ModifyCart";
 
 
 
+
+
 export class Content extends Component<any, any>{
 
     render() {

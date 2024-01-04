@@ -1,6 +1,9 @@
 import {Component} from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faGoogle } from "@fortawesome/free-brands-svg-icons";
 
 export class Login extends Component<any, any>{
+
 
     render() {
         return (
@@ -36,8 +39,22 @@ export class Login extends Component<any, any>{
                         >
                             Log In
                         </button>
+
+                        <div className="flex mt-4 justify-center">
+                            {/* Facebook Login Icon */}
+                            <button className="bg-blue-600 text-white rounded p-2 mr-2">
+                                <FontAwesomeIcon icon={faFacebook} />
+                            </button>
+                            {/* Google Login Icon */}
+                            <button className="bg-red-600 text-white rounded p-2">
+                                <FontAwesomeIcon icon={faGoogle} />
+                            </button>
+                            {/* Add more social icons as needed */}
+                        </div>
                     </form>
+
                 </div>
+
             </div>
         );
     }

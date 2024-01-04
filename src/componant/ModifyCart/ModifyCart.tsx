@@ -48,7 +48,7 @@ export class ModifyCart extends Component<ModifyCartsProps, ModifyCartState>{
     }
     render() {
 
-            let {itemCount} = this.state
+        let {itemCount} = this.state
 
         const onDecreaseItemCount = () =>{
             if (itemCount > 1){
@@ -75,3 +75,5 @@ export class ModifyCart extends Component<ModifyCartsProps, ModifyCartState>{
     }
 
 }
+
+

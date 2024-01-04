@@ -1,6 +1,8 @@
 import {Component} from "react";
-import {Product} from "../../componant/Product/product";
+
 import call from "../../assets/home/phone-call (1).png"
+import {Product} from "../../componant/Product/product";
+
 
 
 export class Home extends Component{
